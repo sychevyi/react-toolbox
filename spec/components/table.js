@@ -2,7 +2,7 @@ import React from 'react';
 import Table from '../../components/table';
 
 const UserModel = {
-  name: {type: String},
+  name: {type: String, style: {width: '50px'}},
   twitter: {type: String, title: '@twitter'},
   birthdate: {type: Date},
   cats: {type: Number, onChange (...args) { console.log('changes:', ...args); } },
